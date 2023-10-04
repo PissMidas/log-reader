@@ -6,9 +6,10 @@ this repo is meant to be a relatively simple example.
 
 
 ## setup:
-install this library.
+install these libraries.
 
 > pip install watchdog
+
 > pip install PyGetWindow
 
 
