@@ -18,10 +18,15 @@ download main.py somewhere on your PC.
 ## how to run this
 
 have the game omega strikers open (do this first).
+
 then run 'python main.py'(do this second).
+
+
 
 if you click around in omega strikers (ex go to your settings, go to the shop, play a game), you will generate logs. if logs are generated, they are detected and printed! I recommend setting up some kind of whitelist or blacklist of words.
 
+
+### other side notes
 "self.file_size = 0" gets initialized to 0 but it doesn't get reset. which is why i check to see if omega strikers is running before letting the observer start observing, and ends the observer if it notices that the game is trying to shut down. (you can circumvent/delete this just be prepared to rewrite code it's just how I did things.)
 
 
