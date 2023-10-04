@@ -2,7 +2,7 @@
 this repo is a simple .log file reader for omega strikers.
 omega strikers is built with unreal engine 5. there's a debugger for it that the devs use. basically as you play a game of omega strikers, there are debugging messages that get saved locally. we can access those messages in real time! the messages are save in a .log file, typically it's 'OmegaStriker.log'. the devs often request log files from people submitting bug reports.
 
-this repo is meant to be a relatively simple example, missing some features like checking if the game omega strikers is already open.
+this repo is meant to be a relatively simple example.
 
 
 ## setup:
