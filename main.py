@@ -3,8 +3,15 @@ from watchdog.events import FileSystemEventHandler
 import os
 import sys
 import time
+import pygetwindow
 
-#pyinstaller --onefile --icon=images/dubu.ico --add-data "images;images" --noconsole --name "Awakening Tracker" tk.py
+def is_omega_strikers_window_open():
+    game_title = "OmegaStrikers"
+    windows = pygetwindow.getAllWindows()
+    for window in windows:
+        if game_title in window.title:
+            return True
+    return False
 
 def resourcePath(relativePath):
     """ Get absolute path to resource, works for dev and for PyInstaller """
@@ -42,12 +49,16 @@ class LogEventHandler(FileSystemEventHandler):
                     #this if statement acts as a whitelister. add more to let more messages from the .log file through.
 
                 print(line) #USED FOR DEBUGGING, OR CALL SOME OTHER FUNCTION HERE, SUCH AS MESSAGING WITH A PIPE OR SOCKET.
-                if 'Application Will Terminate' in line
+                if 'Application Will Terminate' in line:
                     print("Omega Strikers is shutting down. also shutting down this observer program")
-                    exit()
-
+                    print("this code is being terminated with os._exit(0). please consider changing this in a production setting!")
+                    os._exit(0)  # Terminates the program without cleanup. TODO please change this!
 
 if __name__ == "__main__":
+
+    if is_omega_strikers_window_open()== False:
+        print("terminating this program because game is not open. try again once you have omega strikers open!")
+        sys.exit()
     # Creates the file path to the logs. functionally equivalent to "%LOCALAPPDATA%/OmegaStrikers/Saved/Logs/OmegaStrikers.log"
     log_file_path = os.path.join(os.getenv('LOCALAPPDATA'), 'OmegaStrikers', 'Saved', 'Logs', 'OmegaStrikers.log')
 
@@ -66,8 +77,9 @@ if __name__ == "__main__":
         while True:
             # Keep the script running indefinitely
             time.sleep(1)
-    except KeyboardInterrupt:
+    except:
         # Stop the observer when the user presses Ctrl+C
         observer.stop()
+
 
     observer.join()  # Wait for the observer thread to finish gracefully
