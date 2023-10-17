@@ -14,7 +14,11 @@ import pygetwindow
 #dict_internal_to_external.update({"TD_MovementAbilitiesTeleport": "Eject Button", "TD_IncreasedSpeedCrossingMidfield": "Magnetic Soles", "TD_GainRampingSpeed": "Momentum Boots", "TD_HitEnemyDrainThem": "Siphoning Wand", "TD_GoalArcPower": "PowerhousePauldrons", "TD_HitStaggerEnemyCooldownReduction": "Pummelers", "TD_StrikeRockSpeedUp": "Slick Kicks", "TD_RangedStrike": "Strike Shot", "TD_KnockAnythingRecoverStagger": "Vicious Vambraces" })
 
 #characters
-#dict_internal_to_external.update({"C_AngelicSupport_C": "Atlas", "C_ChaoticRocketeer_C": "Luna", "C_CleverSummoner_C": "Juno", "CD_EDMOni": "Octavia", "C_EmpoweringEnchanter_C": "Era", "C_FlashySwordsman_C": "Zentaro", "C_FlexibleBrawler_C": "Juliette", "C_GravityMage_C": "Finii", "C_HulkingBeast_C": "X", "C_MagicalPlaymaker_C": "Ai.Mi", "C_ManipulatingMastermind_C": "Rune", "C_NumbleBlaster_C": "Drek'ar",  "C_RockOni_C": "Vyce", "C_ShieldUser_C": "Asher", "C_SpeedySkirmisher_C": "Kai", "C_StalwartProtector_C": "Dubu",  "C_TempoSniper_C": "Estelle", "C_UmbrellaUser_C": "Kazan",  "C_WhipFighter_C": "Rasmus" })
+#dict_internal_to_external.update({"C_AngelicSupport_C": "Atlas", "C_ChaoticRocketeer_C": "Luna", "C_CleverSummoner_C": "Juno", "C_EDMOni_C": "Octavia", "C_EmpoweringEnchanter_C": "Era", "C_FlashySwordsman_C": "Zentaro", "C_FlexibleBrawler_C": "Juliette", "C_GravityMage_C": "Finii", "C_HulkingBeast_C": "X", "C_MagicalPlaymaker_C": "Ai.Mi", "C_ManipulatingMastermind_C": "Rune", "C_NimbleBlaster_C": "Drek'ar",  "C_RockOni_C": "Vyce", "C_Shieldz_C": "Asher", "C_SpeedySkirmisher_C": "Kai", "C_StalwartProtector_C": "Dubu",  "C_TempoSniper_C": "Estelle", "C_UmbrellaUser_C": "Kazan",  "C_WhipFighter_C": "Rasmus" })
+
+#maps
+#dict_internal_to_external.update({"GameMapDigitalWorld": "Aimi's App", "GameMapOniVillage": "Oni Village", "GameMapSummerSplash": "Inky's Splash Zone", "GameMapAtlasLab": "Atlas's Lab", "GameMapObscura": "Gates of Obscura", "GameMapNightMarket": "Night Market" })
+#missing demon dais and ahten city
 
 def is_omega_strikers_window_open():
     game_title = "OmegaStrikers"
