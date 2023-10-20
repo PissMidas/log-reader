@@ -24,7 +24,7 @@ then run 'python main.py'(do this second).
 
 
 
-if you click around in omega strikers (ex go to your settings, go to the shop, play a game), you will generate logs. if logs are generated, they are detected and printed! I recommend setting up some kind of whitelist or blacklist of words. ('phase' is a keyword in the logs that denote what part of the game we are in, such as character select or )
+if you click around in omega strikers (ex go to your settings, go to the shop, play a game), you will generate logs. if logs are generated, they are detected and printed! I recommend setting up some kind of whitelist or blacklist of words. ('phase' is a keyword in the logs that denote what part of the game we are in, such as character select or goal celebration or intermission )
 
 
 ### other side notes
